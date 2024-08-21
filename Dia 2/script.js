@@ -598,6 +598,19 @@ if(opc==1){
     if (opcion==3){
         console.clear()
         console.log("Reporte campers inscritos")
+        for (var grupito of camper){
+            for(var campers of grupito.campers){
+                    console.log("ID", campers.id);
+                    console.log("Nombre", campers.nombre);
+                    console.log("Apellido", campers.apellido);
+                    console.log("Direccion", campers.direccion);
+                    console.log("Acudiente", campers.acudiente);
+                    console.log("Numero_Celular", campers.numero_celular);
+                    console.log("Numero_Fijo", campers.numero_fijo);
+                    console.log("Estado", campers.estado);
+                    console.log("Riesgo", campers.riesgo);
+            }
+        }
     }
     if (opcion==4){
         console.clear()
@@ -673,7 +686,7 @@ if (opc==2){
         menu()
     }
 }
-if (op==3){
+if (opc==3){
     console.clear()
     console.log("---- Menu Campers")
     Campers()
@@ -681,6 +694,26 @@ if (op==3){
     if (opcio==1){
         console.clear()
         console.log("Revisar mi información")
+        var idcamper=prompt("ingresa el id")
+        for (var grupito of camper){
+            for(var campers of grupito.campers){
+                if (campers.id == idcamper){
+                    console.log("ID", campers.id);
+                    console.log("Fecha", campers.fecha);
+                    console.log("Usuario", campers.usuario);
+                    console.log("Contraseña", campers.contrasena);
+                    console.log("Nombre", campers.nombre);
+                    console.log("Apellido", campers.apellido);
+                    console.log("Direccion", campers.direccion);
+                    console.log("Acudiente", campers.acudiente);
+                    console.log("Numero_Celular", campers.numero_celular);
+                    console.log("Numero_Fijo", campers.numero_fijo);
+                    console.log("Estado", campers.estado);
+                    console.log("Riesgo", campers.riesgo);
+                    console.log("Grupo", campers.grupo);
+                }
+            }
+        }
     }
     if (opcio==2){
         console.clear()
