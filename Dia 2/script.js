@@ -638,7 +638,7 @@ function coordinador(){
 function Trainers(){
     console.log("---- Menu Trainers ----")
     console.log("1. Ruta de los trainers")
-    console.log("2. Salir del programa")
+    console.log("2. Salir del programa:")
 }
 function Campers(){
     console.log("---- Menu Campers ----")
