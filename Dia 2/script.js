@@ -229,7 +229,10 @@ const camper = [
                 "grupo": "t3"
             }
         ],
-        "grupos":"trainers",
+    },
+]
+const trainer = [
+    {
         "trainers": [
             {
                 "id": 1,
@@ -274,6 +277,10 @@ const camper = [
                 "horario": "10am a 2pm"
             }
         ],
+    }
+]
+const rutas = [
+    {
         "ruta": [
             {
                 "id": 1,
@@ -299,6 +306,10 @@ const camper = [
                 "capacidad_maxima": 33
             }
         ],
+    }
+]
+const coordi = [
+    {
         "coordinador": [
             {
                 "nombre": "Stiven",
@@ -306,6 +317,10 @@ const camper = [
                 "cargo": "Coordinador"
             }
         ],
+    }
+]
+const matriculas = [
+    {
         "matricula": [
             {
                 "camperID": 1,
@@ -329,8 +344,10 @@ const camper = [
                 "salon": "Salon Artemis"
             }
         ],
-        "rutaEntrenamiento": "Ruta NodeJS",
-        "trainer": "Jholver",
+    }
+]
+const inscritos = [
+    {
         "campersInscritos": [
             {
                 "id": 1,
@@ -340,7 +357,7 @@ const camper = [
                 "acudiente": "Pedro Caicedo",
                 "numero_celular": 3243293371,
                 "numero_fijo": "6015689286",
-                "estado": "Aprobado",
+                "estado": "Inscrito",
                 "riesgo": "Bajo"
             },
             {
@@ -351,7 +368,7 @@ const camper = [
                 "acudiente": "Juan Barrera",
                 "numero_celular": 3123702377,
                 "numero_fijo": "60156861023",
-                "estado": "Cursando",
+                "estado": "Inscrito",
                 "riesgo": "Medio"
             },
             {
@@ -362,7 +379,7 @@ const camper = [
                 "acudiente": "Maria Cristancho",
                 "numero_celular": 3232483683,
                 "numero_fijo": "60156887212",
-                "estado": "En proceso de ingreso",
+                "estado": "Inscrito",
                 "riesgo": "Bajo"
             },
             {
@@ -373,7 +390,7 @@ const camper = [
                 "acudiente": "Eduardo Correa",
                 "numero_celular": 3225082501,
                 "numero_fijo": "60156895978",
-                "estado": "Aprobado",
+                "estado": "Inscrito",
                 "riesgo": "Bajo"
             },
             {
@@ -384,15 +401,15 @@ const camper = [
                 "acudiente": "Andres Lizarazo",
                 "numero_celular": 3123154497,
                 "numero_fijo": "6015795223",
-                "estado": "Cursando",
+                "estado": "Inscrito",
                 "riesgo": "Medio"
             }
         ]
-    },
+    }
+]
+const bajo= [
     {
-        "rutaEntrenamiento": "Ruta Java",
-        "trainer": "Pedro, Isa",
-        "campersInscritos": [
+        "Bajo":[
             {
                 "id": 1,
                 "nombre": "Anne",
@@ -401,8 +418,8 @@ const camper = [
                 "acudiente": "Marta Ortega",
                 "numero_celular": 3158763254,
                 "numero_fijo": "6045876254",
-                "estado": "Cursando",
-                "riesgo": "Bajo"
+                "estado": "Bajo rendimiento",
+                "riesgo": "Alto"
             },
             {
                 "id": 2,
@@ -412,8 +429,8 @@ const camper = [
                 "acudiente": "Johan Mendez",
                 "numero_celular": 3198532145,
                 "numero_fijo": "601545872",
-                "estado": "En proceso de ingreso",
-                "riesgo": "Medio"
+                "estado": "Bajo rendimiento",
+                "riesgo": "Alto"
             },
             {
                 "id": 3,
@@ -423,93 +440,62 @@ const camper = [
                 "acudiente": "Sofia Delgado",
                 "numero_celular": 3245864793,
                 "numero_fijo": "60156887145",
-                "estado": "Expulsado",
-                "riesgo": "Bajo"
-            },
-            {
-                "id": 4,
-                "nombre": "Carolina",
-                "apellido": "Aguilar",
-                "direccion": "Calle 6 # 55C-42",
-                "acudiente": "Oscar Aguilar",
-                "numero_celular": 3114567895,
-                "numero_fijo": "60156895123",
-                "estado": "Retirado",
-                "riesgo": "Bajo"
-            },
-            {
-                "id": 5,
-                "nombre": "Gabriela",
-                "apellido": "Castro",
-                "direccion": "Calle 6 # 55C-42",
-                "acudiente": "Eduardo Castro",
-                "numero_celular": 3256974361,
-                "numero_fijo": "60157952123",
-                "estado": "Expulsado",
+                "estado": "Bajo rendimiento",
                 "riesgo": "Alto"
-            }
-        ]
-    },
-    {
-        "rutaEntrenamiento": "Ruta NetCore",
-        "trainer": "Miguel",
-        "campersInscritos": [
+            },
             {
-                "id": 1,
+                "id": 11,
                 "nombre": "Salvador",
                 "apellido": "Fuentes",
                 "direccion": "Calle 6 # 55C-42",
                 "acudiente": "Marta Fuentes",
                 "numero_celular": 3115498726,
                 "numero_fijo": "6045872587",
-                "estado": "Cursando",
-                "riesgo": "Bajo"
+                "estado": "Bajo rendimiento",
+                "riesgo": "Alto",
             },
             {
-                "id": 2,
+                "id": 12,
                 "nombre": "Javier",
-                "apellido": "Vaz",
+                "apellido": "Viaz",
                 "direccion": "Calle 6 # 55C-42",
-                "acudiente": "Mario Vaz",
+                "acudiente": "Mario Viaz",
                 "numero_celular": 3146953214,
                 "numero_fijo": "6015847",
-                "estado": "En proceso de ingreso",
-                "riesgo": "Medio"
+                "estado": "Bajo rendimiento",
+                "riesgo": "Alto",
             },
             {
-                "id": 3,
+                "id": 13,
                 "nombre": "Alfredo",
                 "apellido": "Jimenez",
                 "direccion": "Calle 6 # 55C-42",
                 "acudiente": "Sofia Jimenez",
                 "numero_celular": 3159874634,
                 "numero_fijo": "601568852",
-                "estado": "Expulsado",
-                "riesgo": "Bajo"
+                "estado": "Bajo rendimiento",
+                "riesgo": "Alto",
+            },
+        ]
+    }
+]
+const trabajando = [
+    {
+        "Trabajando": [
+            {
+                "Treiner": "Miguel"
             },
             {
-                "id": 4,
-                "nombre": "Alonso",
-                "apellido": "Navarro",
-                "direccion": "Calle 6 # 55C-42",
-                "acudiente": "Oscar Navarro",
-                "numero_celular": 3148545412,
-                "numero_fijo": "601568957",
-                "estado": "Retirado",
-                "riesgo": "Bajo"
+                "Treiner": "Pedro"
             },
             {
-                "id": 5,
-                "nombre": "Alvarado",
-                "apellido": "Barbosa",
-                "direccion": "Calle 6 # 55C-42",
-                "acudiente": "Eduardo Barbosa",
-                "numero_celular": 3258965413,
-                "numero_fijo": "601579552",
-                "estado": "Expulsado",
-                "riesgo": "Alto"
+                "Treiner": "Isa"
             }
-        ],
+        ]
+    }
+]
+const aprobados = [
+    {
         "reporte": [
             {
                 "id": 1,
@@ -521,9 +507,13 @@ const camper = [
                 "id": 2,
                 "nombre": "Anne",
                 "apellido": "Ortega",
-                "estado": "Inscrito"
-            }
+                "estado": "Aprobado"
+            },
         ],
+    }
+]
+const esta =[
+    {
         "estado": [
             {
                 "id": 1,
@@ -536,12 +526,89 @@ const camper = [
                 "nombre": "Jaime",
                 "apellido": "Barrera",
                 "estado": "Inscrito"
+            },
+            {
+                "id": 3,
+                "nombre": "Karen",
+                "apellido": "Cristancho",
+                "estado": "En proceso de ingreso",
+            },
+            {
+                "id": 4,
+                "nombre": "Jerxon",
+                "apellido": "Correa",
+                "estado": "Aprobado",
+            },
+            {
+                "id": 5,
+                "nombre": "Maria",
+                "apellido": "Lizarazo",
+                "estado": "Cursando",
+            },
+            {
+                "id": 6,
+                "nombre": "Anne",
+                "apellido": "Ortega",
+                "estado": "Cursando",
+            },
+            {
+                "id": 7,
+                "nombre": "Daniel",
+                "apellido": "Mendez",
+                "estado": "En proceso de ingreso",
+            },
+            {
+                "id": 8,
+                "nombre": "Pablo",
+                "apellido": "Delgado",
+                "estado": "Expulsado",
+            },
+            {
+                "id": 9,
+                "nombre": "Carolina",
+                "apellido": "Aguilar",
+                "estado": "Retirado",
+            },
+            {
+                "id": 10,
+                "nombre": "Gabriela",
+                "apellido": "Castro",
+                "estado": "Expulsado",
+            },
+            {
+                "id": 11,
+                "nombre": "Salvador",
+                "apellido": "Fuentes",
+                "estado": "Cursando",
+            },
+            {
+                "id": 12,
+                "nombre": "Javier",
+                "apellido": "Viaz",
+                "estado": "En proceso de ingreso",
+            },
+            {
+                "id": 13,
+                "nombre": "Alfredo",
+                "apellido": "Jimenez",
+                "estado": "Expulsado",
+            },
+            {
+                "id": 14,
+                "nombre": "Alonso",
+                "apellido": "Navarro",
+                "estado": "Retirado",
+            },
+            {
+                "id": 15,
+                "nombre": "Alvarado",
+                "apellido": "Barbosa",
+                "estado": "Expulsado",
             }
         ]
     }
 ]
 console.log(camper)
-
 function menu(){
     console.log("---- Bienvenidos a la plataforma ----")
     console.log("1. Coordinador")
@@ -565,15 +632,13 @@ function coordinador(){
     console.log("11. Eliminar campers")
     console.log("12. Eliminar treiners")
     console.log("13. Eliminar rutas")
-    console.log("14. Salir del programa")
-    console.log("15. Volverr al menu principal")
+    console.log("14 Listar campers")
+    console.log("15. Volver al menu principal")
 }
 function Trainers(){
     console.log("---- Menu Trainers ----")
-    console.log("1. Estado de los campers")
-    console.log("2. Ruta de los trainers")
-    console.log("3. Reportes")
-    console.log("4. Salir del programa")
+    console.log("1. Ruta de los trainers")
+    console.log("2. Salir del programa")
 }
 function Campers(){
     console.log("---- Menu Campers ----")
@@ -581,7 +646,6 @@ function Campers(){
     console.log("2. Salir del programa")
 }
 var opc=prompt("Elije la opción que deseas: ")
-
 if(opc==1){
     console.clear()
     console.log("---- Menu coordinador ----")
@@ -598,63 +662,103 @@ if(opc==1){
     if (opcion==3){
         console.clear()
         console.log("Reporte campers inscritos")
-        for (var grupito of camper){
-            for(var campers of grupito.campers){
-                    console.log("ID", campers.id);
-                    console.log("Nombre", campers.nombre);
-                    console.log("Apellido", campers.apellido);
-                    console.log("Direccion", campers.direccion);
-                    console.log("Acudiente", campers.acudiente);
-                    console.log("Numero_Celular", campers.numero_celular);
-                    console.log("Numero_Fijo", campers.numero_fijo);
-                    console.log("Estado", campers.estado);
-                    console.log("Riesgo", campers.riesgo);
-            }
-        }
+        for (var gru of inscritos[0]["campersInscritos"]){
+            console.log("ID", gru["id"]);
+            console.log("Nombre", gru["nombre"]);
+            console.log("Apellido", gru["apellido"]);
+            console.log("Direccion", gru["direccion"]);
+            console.log("Acudiente", gru["acudiente"]);
+            console.log("Numero_Celular", gru["numero_celular"]);
+            console.log("Numero_Fijo", gru["numero_fijo"]);
+            console.log("Estado", gru["estado"]);
+            console.log("Riesgo", gru["riesgo"]);
+        } 
     }
     if (opcion==4){
         console.clear()
         console.log("Reporte de campers aprobados")
+        for (var grupo of aprobados[0]["reporte"]){
+            console.log("ID", grupo["id"]);
+            console.log("Nombre", grupo["nombre"]);
+            console.log("Apellido", grupo["apellido"]);
+            console.log("Direccion", grupo["direccion"]);
+            console.log("Acudiente", grupo["acudiente"]);
+            console.log("Numero_Celular", grupo["numero_celular"]);
+            console.log("Numero_Fijo", grupo["numero_fijo"]);
+            console.log("Estado", grupo["estado"]);
+            console.log("Riesgo", grupo["riesgo"]);
+        }
     }
     if (opcion==5){
         console.clear()
         console.log("Estado de los campers")
+        for (var grup of esta[0]["estado"]){
+            console.log("ID", grup["id"]);
+            console.log("Nombre", grup["nombre"]);
+            console.log("Apellido", grup["apellido"]);
+            console.log("Estado", grup["estado"]);
+        }
     }
     if (opcion==6){
         console.clear()
         console.log("Campers con bajo rendimiento")
+        for (var grupos of bajo[0]["Bajo"]){
+            console.log("ID", grupos["id"]);
+            console.log("Nombre", grupos["nombre"]);
+            console.log("Apellido", grupos["apellido"]);
+            console.log("Direccion", grupos["direccion"]);
+            console.log("Acudiente", grupos["acudiente"]);
+            console.log("Numero_Celular", grupos["numero_celular"]);
+            console.log("Numero_Fijo", grupos["numero_fijo"]);
+            console.log("Estado", grupos["estado"]);
+            console.log("Riesgo", grupos["riesgo"]);
+        }
     }
     if (opcion==7){
         console.clear()
-        console.log("Campers con bajo rendimiento")
+        console.log("Agregar rutas de entrenamiento")
     }
     if (opcion==8){
         console.clear()
-        console.log("Campers con bajo rendimiento")
+        console.log("Asignar campers a la ruta de entrenamiento")
     }
     if (opcion==9){
         console.clear()
-        console.log("Campers con bajo rendimiento")
+        console.log("Agregar nuevos treiners")
     }
     if (opcion==10){
         console.clear()
-        console.log("Campers con bajo rendimiento")
+        console.log("Reporte de treiners trabajando")
+        for (var tre of trabajando[0]["Trabajando"]){
+            console.log("Trainer", tre["Treiner"]);
+        }
     }
     if (opcion==11){
         console.clear()
-        console.log("Campers con bajo rendimiento")
+        console.log("Eliminar campers")
     }
     if (opcion==12){
         console.clear()
-        console.log("Campers con bajo rendimiento")
+        console.log("Eliminar treiners")
     }
     if (opcion==13){
         console.clear()
-        console.log("Campers con bajo rendimiento")
+        console.log("Eliminar ruta")
     }
     if (opcion==14){
         console.clear()
-        console.log("Campers con bajo rendimiento")
+        console.log("Listar campers")
+        for (var cam of camper[0]["campers"]){
+            console.log("ID", cam["id"]);
+            console.log("Nombre", cam["nombre"]);
+            console.log("Apellido", cam["apellido"]);
+            console.log("Direccion", cam["direccion"]);
+            console.log("Acudiente", cam["acudiente"]);
+            console.log("Numero_Celular", cam["numero_celular"]);
+            console.log("Numero_Fijo", cam["numero_fijo"]);
+            console.log("Estado", cam["estado"]);
+            console.log("Riesgo", cam["riesgo"]);
+        }
     }
     if (opcion==15){
         console.clear()
@@ -669,17 +773,16 @@ if (opc==2){
     let opci=prompt("Elije la opción que deseas: ")
     if (opci==1){
         console.clear()
-        console.log("Estado de los campers")
+        console.log("Ruta de los trainers")
+        for (var ru of rutas[0]["ruta"]){
+            console.log("ID", ru["id"]);
+            console.log("Trainer", ru["trainer"]);
+            console.log("Nombre", ru["nombre"]);
+            console.log("Modulo", ru["modulo"]);
+            console.log("Capacidad_Maxima", ru["capacidad_maxima"]);
+        }
     }
     if (opci==2){
-        console.clear()
-        console.log("Ruta de los trainers")
-    }
-    if (opci==3){
-        console.clear()
-        console.log("Reportes")
-    }
-    if (opci==4){
         console.clear()
         console.log("Salir del programa")
         console.clear()
