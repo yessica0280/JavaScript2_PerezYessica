@@ -70,7 +70,6 @@ const experiencia = [
     }
 ]
 console.log(informacion)
-
 function menu(){
     console.log("---- Bienvenidos a la plataforma ----")
     console.log("1. Información")
