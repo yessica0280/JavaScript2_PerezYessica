@@ -13,7 +13,7 @@ var informacion = [
                 "telefono": "+123456789"
                 },
                 {
-                    "nombre": "Juan Pérez",
+                    "nombre": "yessica",
                     "edad": 30,
                     "direccion": "calle 12",
                     "calle": "Calle Principal",
@@ -84,6 +84,7 @@ function Informacion(){
     console.log("2. Agregar información")
     console.log("3. Eliminar información")
     console.log("4. Actualizar información")
+    console.log("5. Volver al menu principal")
 }
 function Historial(){
     console.log("---- Menu del Historial ----")
@@ -91,6 +92,7 @@ function Historial(){
     console.log("2. Agregar historial")
     console.log("3. Eliminar historial")
     console.log("4. Actualizar historial")
+    console.log("5. Volver al menu principal")
 }
 function Experiencia(){
     console.log("---- Menu de la experiencia ----")
@@ -98,6 +100,7 @@ function Experiencia(){
     console.log("2. Agregar experiencia")
     console.log("3. Eliminar experiencia")
     console.log("4. Actualizar experiencia")
+    console.log("5. Volver al menu principal")
 }
 var opc=prompt("Elije la opción que deseas: ")
 if (opc == 1){
@@ -143,11 +146,30 @@ console.log(informacion)    }
     if (opcion == 4){
         console.clear()
         console.log("Actualizar informacion: ")
+        nombre=prompt("ingresa un nombre del usuario que deseas actualizar: ")
+        for (const i of informacion[0]["informacion_personal"]){
+            if (nombre == i["nombre"]){
+                let calle=prompt("Ingresa la calle: ")
+                let numero=prompt("Ingresa el numero: ")
+                let ciudad=prompt("Ingresa la ciudad: ")
+                let contacto=prompt("Ingresa el contacto: ") 
+                i["calle"]=calle
+                i["numero"]=numero
+                i["ciudad"]=ciudad
+                i["contacto"]=contacto 
+            }
+        }
+        console.log (informacion[0]["informacion_personal"][1])
+    }
+    if (opcion == 5){
+        console.clear()
+        console.log("Volver al menu principal: ")
+        menu()
     }
 }
 if (opc == 2){
     console.clear()
-    console.log("----  Menu del Historial ----")
+    console.log("----  Menu del Historial --- -")
     Historial()
     let opcion=prompt("Elije la opcion que deseas: ")
     if (opcion == 1){
@@ -178,5 +200,75 @@ console.log(historial)    }
     if (opcion == 4){
         console.clear()
         console.log("Actualizar historial: ")
+        nivel=prompt("ingresa el nivel del usuario que deseas actualizar: ")
+        for (const i of historial[0]["historial_educativo"]){
+            if(nivel == i["nivel"]){
+                let nivel=prompt("Ingresa el nuevo nivel")
+                let institucion=prompt("Ingresa la nueva institucion")
+                i["nivel"]=nivel
+                i["institucion"]=institucion
+            }
+        }
+        console.log (historial[0]["historial_educativo"][1])
+    }
+    if (opcion == 5){
+        console.clear()
+        console.log ("Volver al menu principal: ")
+        menu()
     }
 }
+if (opc == 3){
+    console.clear()
+    console.log("----  Menu de Experiencia --- -")
+    Experiencia()
+    let opcion=prompt("Elije la opcion que deseas: ")
+    if (opcion == 1){
+        console.clear()
+        console.log("Ver experiencia");
+        for (var grupo of experiencia[0]["experiencia_laboral"]){
+            console.log("Puesto", grupo["puesto"]);
+            console.log("Empresa", grupo["empresa"]);
+            console.log("Periodo", grupo["periodo"]);
+            console.log("Responsabilidades", grupo["responsabilidades"]);
+        } 
+    }
+    if (opcion == 2){
+        console.clear()
+        console.log("Agregar experiencia");
+        let puesto=prompt("Ingresa el puesto: ")
+        let empresa=prompt("Ingresa la empresa: ")
+        let periodo=prompt("Ingresa el periodo: ")
+        let responsabilidades=prompt("Ingresa la responsabilidades: ")
+        experiencia[0]["experiencia_laboral"].push({"puesto": puesto, "empresa": empresa, "periodo": periodo, "responsabilidades": responsabilidades})
+console.log(experiencia)    }
+    if (opcion == 3){
+        console.clear()
+        console.log("Eliminar experiencia: ")
+        experiencia[0]["experiencia_laboral"].pop();
+        console.log(experiencia)
+    }
+    if (opcion == 4){
+        console.clear()
+        console.log("Actualizar experiencia: ")
+        nombre=prompt("ingresa el puesto del usuario que deseas actualizar: ")
+        for (const i of experiencia[0]["experiencia_laboral"]){
+            if (puesto == i["puesto"]){
+                let puesto=prompt("Ingresa el puesto: ")
+                let empresa=prompt("Ingresa la empresa: ")
+                let periodo=prompt("Ingresa el periodo: ")
+                let responsabilidades=prompt("Ingresa las responsabilidades: ") 
+                i["puesto"]=puesto
+                i["empresa"]=empresa
+                i["periodo"]=periodo
+                i["responsabilidades"]=responsabilidades 
+            }
+        }
+        console.log (experiencia[0]["experiencia_laboral"][1])
+    }
+    if (opcion == 5){
+        console.clear()
+        console.log("Volver al menu principal: ")
+        menu()
+    }
+}
+// Desarrollado por Yessica Andrea Perez Machuca Grupo T2.
