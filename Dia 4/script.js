@@ -249,7 +249,7 @@ console.log(experiencia)    }
     if (opcion == 4){
         console.clear()
         console.log("Actualizar experiencia: ")
-        nombre=prompt("ingresa el puesto del usuario que deseas actualizar: ")
+        puesto=prompt("ingresa el puesto del usuario que deseas actualizar: ")
         for (const i of experiencia[0]["experiencia_laboral"]){
             if (puesto == i["puesto"]){
                 let puesto=prompt("Ingresa el puesto: ")

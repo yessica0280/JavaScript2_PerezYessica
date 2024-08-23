@@ -1,6 +1,5 @@
 const camper = [
     {
-        "grupo": "t1",
         "campers": [
             {
                 "id": 1,
@@ -654,10 +653,44 @@ if(opc==1){
     if (opcion==1){
         console.clear()
         console.log("Registrar campers");
-    }
+        let id=prompt("Ingresa el id: ")
+        let nombre=prompt("Ingresa el nombre: ")
+        let apellido=prompt("Ingresa el apellido: ")
+        let direccion=prompt("Ingresa la direccion: ")
+        let acudiente=prompt("Ingresa el acudiente: ")
+        let numerocelular=prompt("Ingresa el numero celular: ")
+        let numerofijo=prompt("Ingresa el numero fijo: ")
+        let estado=prompt("Ingresa el estado: ")
+        let riesgo=prompt("Ingresa el riesgo: ")
+        camper[0]["campers"].push({"id": id, "nombre": nombre, "apellido": apellido, "direccion": direccion, "acudiente": acudiente, "numero_celular": numerocelular, "numero_fijo": numerofijo, "estado": estado, "riesgo": riesgo})
+console.log(camper) }
     if (opcion==2){
         console.clear()
         console.log("Actualizar datos del nuevo camper")
+        id=prompt("Ingresa el id del camper que deseas actualizar: ")
+        for (const i of camper[0]["campers"]){
+            if (id == i["id"]){
+                let id=prompt("Ingresa el id: ")
+                let nombre=prompt("Ingresa el nombre: ")
+                let apellido=prompt("Ingresa el apellido: ")
+                let direccion=prompt("Ingresa la direccion: ")
+                let acudiente=prompt("Ingresa el acudiente: ")
+                let numerocelular=prompt("Ingresa el numero celular: ")
+                let numerofijo=prompt("Ingresa el numero fijo: ")
+                let estado=prompt("Ingresa el estado: ")
+                let riesgo=prompt("Ingresa el riesgo: ")
+                i["id"]=id
+                i["nombre"]=nombre
+                i["apellido"]=apellido
+                i["direccion"]=direccion
+                i["acudiente"]=acudiente
+                i["numero_celular"]=numerocelular
+                i["numero_fijo"]=numerofijo
+                i["estado"]=estado
+                i["riesgo"]=riesgo
+            }
+        }
+        console.log (camper[0]["campers"])
     }
     if (opcion==3){
         console.clear()
@@ -673,6 +706,7 @@ if(opc==1){
             console.log("Estado", gru["estado"]);
             console.log("Riesgo", gru["riesgo"]);
         } 
+        console.log (camper)
     }
     if (opcion==4){
         console.clear()
@@ -717,7 +751,13 @@ if(opc==1){
     if (opcion==7){
         console.clear()
         console.log("Agregar rutas de entrenamiento")
-    }
+        let id=prompt("Ingresa el id de la ruta: ")
+        let trainer=prompt("Ingresa el nombre del trainer: ")
+        let nombre=prompt("Ingresa el nombre de la ruta: ")
+        let modulo=prompt("Ingresa el modulo: ")
+        let capacidad_maxima=prompt("Ingresa la capacidad: ")
+        rutas[0]["ruta"].push({"id": id, "trainer": trainer, "nombre": nombre, "modulo": modulo, "capacidad_maxima": capacidad_maxima})
+console.log(rutas) }
     if (opcion==8){
         console.clear()
         console.log("Asignar campers a la ruta de entrenamiento")
@@ -725,7 +765,12 @@ if(opc==1){
     if (opcion==9){
         console.clear()
         console.log("Agregar nuevos treiners")
-    }
+        let id=prompt("Ingresa el id: ")
+        let nombre=prompt("Ingresa el nombre: ")
+        let ruta=prompt("Ingresa la ruta: ")
+        let horario=prompt("Ingresa el horario: ")
+        trainer[0]["trainers"].push({"id": id, "nombre": nombre, "ruta": ruta, "horario": horario})
+console.log(trainer)    }
     if (opcion==10){
         console.clear()
         console.log("Reporte de treiners trabajando")
@@ -736,14 +781,20 @@ if(opc==1){
     if (opcion==11){
         console.clear()
         console.log("Eliminar campers")
+        camper[0]["campers"].pop();
+        console.log(camper)
     }
     if (opcion==12){
         console.clear()
         console.log("Eliminar treiners")
+        trainer[0]["trainers"].pop();
+        console.log(trainer)
     }
     if (opcion==13){
         console.clear()
         console.log("Eliminar ruta")
+        rutas[0]["ruta"].pop();
+        console.log(rutas)
     }
     if (opcion==14){
         console.clear()
