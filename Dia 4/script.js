@@ -270,4 +270,4 @@ console.log(experiencia)    }
         menu()
     }
 }
-// Desarrollado por Yessica Andrea Perez Machuca Grupo T2.
+// Desarrollado por Yessica Andrea Perez Machuca Grupo:T2.
