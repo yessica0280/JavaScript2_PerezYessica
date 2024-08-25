@@ -134,3 +134,112 @@ console.log(Products)   }
         menu()
     }
 }
+if (opcion == 2){
+    console.clear()
+    console.log("---- Menu de Supplies ----")
+    supplies()
+    let opcion=prompt("Elije la opción que deseas: ")
+    if (opcion == 1){
+        console.clear()
+        console.log("Ver supplies: ")
+        for (var i of Supplies[0]["suppliers"]){
+            console.log("id", i["id"]);
+            console.log("name", i["name"]);
+            console.log("contactInfo", i["contactInfo"]);
+            console.log("phone", i["phone"]);
+            console.log("email", i["email"]); 
+            console.log("address", i["address"]);
+        }
+    }
+    if (opcion == 2){
+        console.clear()
+        console.log("Agregar supplies: ")
+        let id=prompt("Ingresa el id: ")
+        let name=prompt("Ingresa el name: ")
+        let contactInfo=prompt("Ingresa el contactInfo: ")
+        let phone=prompt("Ingresa el phone: ")
+        let email=prompt("Ingresa el email: ")
+        let address=prompt("Ingresa el address: ")
+        Supplies[0]["suppliers"].push({"id": id, "name": name, "contactInfo": contactInfo, "phone": phone, "email": email, "address": address})
+console.log(Supplies)   }
+    if (opcion == 3){
+        console.clear()
+        console.log("Eliminar supplies: ")
+        Supplies[0]["suppliers"].pop();
+        console.log(Supplies)
+    }
+    if (opcion == 4){
+        console.clear()
+        console.log("Actualizar supplies: ")
+        id=prompt("Ingresa el id del usuario que deseas actualizar: ")
+        for (const i of Supplies[0]["suppliers"]){
+            if (id == i["id"]){
+                let id=prompt("Ingresa el nuevo id: ")
+                let email=prompt("Ingresa el nuevo email: ")
+                let phone=prompt("Ingresa el nuevo phone: ")
+                i["id"]=id
+                i["email"]=email
+                i["phone"]=phone
+            }
+        }
+        console.log(Supplies[0]["suppliers"])
+    }
+    if (opcion == 5){
+        console.clear()
+        console.log("Volver al menu principal: ")
+        menu()
+    }
+}
+if (opc == 3){
+    console.clear
+    console.log("---- Menu de orders ----")
+    orders()
+    let opcion =prompt("Elije la opción que deseas: ")
+    if (opcion == 1){
+        console.clear()
+        console.log("Ver orders: ")
+        for (var i of Orders[0]["orders"]){
+            console.log("orderId", i["orderId"]);
+            console.log("productId", i["productId"]);
+            console.log("quantity", i["quantity"]);
+            console.log("orderDate", i["orderDate"]);
+            console.log("status", i["status"]);
+        }
+    }
+    if (opcion == 2){
+        console.clear()
+        console.log("Agregar orders :")
+        let orderId=prompt("Ingresa la nueva orderId: ")
+        let productId=prompt("Ingresa el nuevo productId: ")
+        let quantity=prompt("Ingresa el nuevo quantity: ")
+        let orderDate=prompt("Ingresa la nueva orderDate: ")
+        let status=prompt("Ingresa el nuevo status: ")
+        Orders[0]["orders"].push({"orderId": orderId, "productId": productId, "quantity": quantity, "orderDate": orderDate, "status": status})
+console.log(Orders)    }
+    if (opcion == 3){
+        console.clear()
+        console.log("Eliminar orders: ")
+        Orders[0]["orders"].pop();
+        console.log(Orders)
+    }
+    if (opcion == 4){
+        console.clear()
+        console.log("Actualizar orders: ")
+        orderId=prompt("Ingresa la orderId del usuario que deseas actualizar: ")
+        for (const i of Orders[0]["orders"]){
+            if (orderId == i["orderId"]){
+                let orderId=prompt("Ingresa la orderId nueva: ")
+                let orderDate=prompt("Ingresa la nueva orderDate: ")
+                i["orderId"]=orderId
+                i["orderDate"]=orderDate
+            }
+        }
+        console.log(Orders[0]["orders"])
+    }
+    if (opcion == 5){
+        console.clear()
+        console.log("Volver al menu principal: ")
+        menu()
+    }
+}
+// Desarrollado por Yessica Andrea Perez Machuca Grupo:T2
