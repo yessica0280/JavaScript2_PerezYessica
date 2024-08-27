@@ -1,0 +1,10 @@
+[
+    {
+        "orderId": 1001,
+        "productId": 1,
+        "quantity": 5,
+        "price": 999.99,
+        "orderDate": "2024-08-23",
+        "status": "Delivered"
+    }
+]
