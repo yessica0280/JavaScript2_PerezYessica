@@ -3,7 +3,7 @@
     src: url(letra/Poppins-ExtraLight.ttf);
 }
 body{
-    background-color: white;
+    background-color: #ECD4FF
 }
 #cuadro{
     width: 99vw;
@@ -25,7 +25,7 @@ body{
 }
 #cuadro1{
     margin-top: -5vw;
-    margin-left: -0.2vw;
+    margin-left: -3.2vw;
     width: 12vw;
     height: 4.9vw;
     border-radius: 2vw;
@@ -835,7 +835,7 @@ body{
     margin-left: 5vw;
 }
 #button1:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button2{
     margin-top: -0.2vw;
@@ -848,7 +848,7 @@ body{
     margin-left: 5vw;
 }
 #button2:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button3{
     margin-top: -0.2vw;
@@ -861,7 +861,7 @@ body{
     margin-left: 5vw;
 }
 #button3:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button4{
     margin-top: -0.2vw;
@@ -874,7 +874,7 @@ body{
     margin-left: 5vw;
 }
 #button4:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button5{
     margin-top: -0.2vw;
@@ -887,7 +887,7 @@ body{
     margin-left: 5vw;
 }
 #button5:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button6{
     margin-top: -0.2vw;
@@ -900,7 +900,7 @@ body{
     margin-left: 5vw;
 }
 #button6:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button7{
     margin-top: -0.2vw;
@@ -913,7 +913,7 @@ body{
     margin-left: 5vw;
 }
 #button7:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button8{
     margin-top: -0.2vw;
@@ -926,7 +926,7 @@ body{
     margin-left: 5vw;
 }
 #button8:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button9{
     margin-top: -0.2vw;
@@ -939,7 +939,7 @@ body{
     margin-left: 5vw;
 }
 #button9:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button10{
     margin-top: -0.2vw;
@@ -952,7 +952,7 @@ body{
     margin-left: 5vw;
 }
 #button10:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button11{
     margin-top: -0.2vw;
@@ -965,7 +965,7 @@ body{
     margin-left: 5vw;
 }
 #button11:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
 #button12{
     margin-top: -0.2vw;
@@ -978,5 +978,5 @@ body{
     margin-left: 5vw;
 }
 #button12:hover{
-    background-color: rgb(168, 95, 237);
+    background-color: rgb(197, 142, 248);
 }
