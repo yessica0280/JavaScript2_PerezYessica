@@ -291,91 +291,6 @@ body{
     font-family: letra1;
     margin-left: 3vw;
 }
-#ver{
-    width: 99vw;
-    height: 5vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-}
-#cuadro19{
-    margin-top: -5vw;
-    margin-left: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro19:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro20{
-    margin-top: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro20:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro21{
-    margin-top: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro21:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro22{
-    margin-top: -0.2VW;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro22:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro23{
-    margin-top: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro23:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro24{
-    margin-top: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro24:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
 #letra5{
     color: black;
     margin-left: 45vw;
@@ -622,78 +537,6 @@ body{
     font-size: 1.6vw;
     font-family: letra1;
     margin-left: 3vw;
-}
-#cuadr{
-    width: 99vw;
-    height: 5vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-}
-#cuadro43{
-    margin-top: -5vw;
-    margin-left: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro43:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro44{
-    margin-top: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro44:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro45{
-    margin-top: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro45:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro46{
-    margin-top: -0.2VW;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro46:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro47{
-    margin-top: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro47:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
 }
 #letra6{
     color: black;
@@ -981,88 +824,159 @@ body{
     font-family: letra1;
     margin-left: 3vw;
 }
-#d{
-    width: 99vw;
-    height: 5vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-}
-#cuadro67{
-    margin-top: -5vw;
-    margin-left: -0.2vw;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro67:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro68{
+#button1{
     margin-top: -0.2vw;
     width: 12vw;
-    height: 4.9vw;
+    height: 3vw;
     border-radius: 2vw;
     border: 2px solid black;
     text-align: center;
     font-size: 1.5vw;
+    margin-left: 5vw;
 }
-#cuadro68:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
+#button1:hover{
+    background-color: rgb(168, 95, 237);
 }
-#cuadro69{
+#button2{
     margin-top: -0.2vw;
     width: 12vw;
-    height: 4.9vw;
+    height: 3vw;
     border-radius: 2vw;
     border: 2px solid black;
     text-align: center;
     font-size: 1.5vw;
+    margin-left: 5vw;
 }
-#cuadro69:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
+#button2:hover{
+    background-color: rgb(168, 95, 237);
 }
-#cuadro70{
-    margin-top: -0.2VW;
-    width: 12vw;
-    height: 4.9vw;
-    border-radius: 2vw;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5vw;
-}
-#cuadro70:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
-}
-#cuadro71{
+#button3{
     margin-top: -0.2vw;
     width: 12vw;
-    height: 4.9vw;
+    height: 3vw;
     border-radius: 2vw;
     border: 2px solid black;
     text-align: center;
     font-size: 1.5vw;
+    margin-left: 5vw;
 }
-#cuadro71:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
+#button3:hover{
+    background-color: rgb(168, 95, 237);
 }
-#cuadro72{
+#button4{
     margin-top: -0.2vw;
     width: 12vw;
-    height: 4.9vw;
+    height: 3vw;
     border-radius: 2vw;
     border: 2px solid black;
     text-align: center;
     font-size: 1.5vw;
+    margin-left: 5vw;
 }
-#cuadro72:focus{
-    border-color: rgb(127, 16, 232);
-    outline: none;
+#button4:hover{
+    background-color: rgb(168, 95, 237);
+}
+#button5{
+    margin-top: -0.2vw;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+#button5:hover{
+    background-color: rgb(168, 95, 237);
+}
+#button6{
+    margin-top: -0.2vw;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+#button6:hover{
+    background-color: rgb(168, 95, 237);
+}
+#button7{
+    margin-top: -0.2vw;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+#button7:hover{
+    background-color: rgb(168, 95, 237);
+}
+#button8{
+    margin-top: -0.2vw;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+#button8:hover{
+    background-color: rgb(168, 95, 237);
+}
+#button9{
+    margin-top: -0.2vw;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+#button9:hover{
+    background-color: rgb(168, 95, 237);
+}
+#button10{
+    margin-top: -0.2vw;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+#button10:hover{
+    background-color: rgb(168, 95, 237);
+}
+#button11{
+    margin-top: -0.2vw;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+#button11:hover{
+    background-color: rgb(168, 95, 237);
+}
+#button12{
+    margin-top: -0.2vw;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+#button12:hover{
+    background-color: rgb(168, 95, 237);
 }

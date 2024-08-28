@@ -1,58 +1,22 @@
-document.getElementById('button2').addEventListener('click', obtenerjson);
-function obtenerjson(){
-    fetch('info.json')
+
+// Ver
+document.getElementById("button4").addEventListener("click", ver)
+function ver(){
+    fetch("info.json")
     .then(res => res.json())
-    .then(data =>{
-        console.log(data[0]["id"]);
-        for (i in data){
-            console.log(data[i]["id"])
-        }
-        console.log(data[0]["name"]);
-        for (i in data){
-            console.log(data[i]["name"])
-        }
-        console.log(data[0]["category"]);
-        for (i in data){
-            console.log(data[i]["category"])
-        }
-        console.log(data[0]["price"]);
-        for (i in data){
-            console.log(data[i]["price"])
-        }
-        console.log(data[0]["quantityInStock"]);
-        for (i in data){
-            console.log(data[i]["quantityInStock"])
-        }
-        console.log(data[0]["supplierId"]);
-        for (i in data){
-            console.log(data[i]["supplierId"])
-        }
-    })
-}
-document.getElementById('button2').addEventListener('click', obtenerjson);
-function obtenerjson(){
-    fetch('info1.json')
-    .then(res => res.json())
-    .then(data =>{
-        console.log(data[0]["id"]);
-        for (i in data){
-            console.log(data[i]["id"])
-        }
-        console.log(data[0]["name"]);
-        for (i in data){
-            console.log(data[i]["name"])
-        }
-        console.log(data[0]["phone"]);
-        for (i in data){
-            console.log(data[i]["phone"])
-        }
-        console.log(data[0]["email"]);
-        for (i in data){
-            console.log(data[i]["email"])
-        }
-        console.log(data[0]["address"]);
-        for (i in data){
-            console.log(data[i]["address"])
-        }
+    .then(data => {
+        let producto=data[0]["products"];
+        let output=document.getElementById("output");
+        output.innerHTML="";
+        producto.forEach (product =>{
+            documentos.getElementById("output").innerHTML += `
+            <p>id: ${product.id}</p>
+            <p>name: ${product.name}</p>
+            <p>category: ${product.category}</p>
+            <p>price: ${product.price}</p>
+            <p>quantityInStock: ${product.quantityInStock}</p>
+            <p>supplierId: ${product.supplierId}</p>
+            `
+        })
     })
 }

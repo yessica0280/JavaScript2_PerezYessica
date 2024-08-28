@@ -1,11 +1,21 @@
-[
+let data = 
     {
-        "id": 101,
-        "name": "Tech Supplies Inc."
+        "products": [
+    {
+    "id": 1,
+    "name": "Laptop",
+    "category": "Electronics",
+    "price": 999.99,
+    "quantityInStock": 50,
+    "supplierId": 101
     },
     {
-        "phone": "123-456-7890",
-        "email": "sales@techsupplies.com",
-        "address": "123 Tech Lane, Silicon Valley, CA"
+    "id": 2,
+    "name": "Smartphone",
+    "category": "Electronics",
+    "price": 999,
+    "quantityInStock": 7,
+    "supplierId": 101
     }
 ]
+}
