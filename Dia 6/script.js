@@ -16,7 +16,7 @@ fetch("info.json")
             }
             console.log(data[0]["products"])
         }
-        // Agregar un producto
+        // Agregar products
         document.getElementById("e").addEventListener("submit", function(event){
             event.preventDefault();
         
@@ -38,18 +38,48 @@ fetch("info.json")
                                     
             ver()  
         })
+        
 })
-//Eliminar menu products
-function eliminar(){
-    let idpedido=parseInt(document.getElementById("idpedido").value)
-    if (archivo.products.some(i => i.productId===idpedido)){
-        archiv.products=archivo.products.filter(i => i.productId==idpedido)
-        document.getElementById("button2").innerHTML=""
-        ver()
-    } else{
-        alert("Id no encontrado")
-    }
+//Eliminar products
+function eliminar(id){
+    data[0].products=data[0].products.filter(Object=>Object.id!==id);
+    ver()
 }
+eliminar(3)
+
+//Actualizar menu products
+function cambio(){
+    document.getElementById("c1").addEventListener("submit", function(event){
+        event.preventDefault();
+        let filtrar =parseInt(document.getElementById("filtrar").value);
+        output1.innerHTML="";
+        let contador=false;
+        for (let i of data[0]["products"]){
+            if (i["id"]===filtrar){
+                output1.innerHTML+=`
+                <p>Id:${i["id"]}
+                <p>Name:${i["name"]}
+                <p>category:${i["category"]}
+                <p>price:${i["price"]}
+                <p>quantityInStock:${i["quantityInStock"]}
+                <p>supplierId:${i["supplierId"]}`
+                contador = true
+                button11.addEventListener("click", (e)=>{
+                    let newproduct=parseInt(document.getElementById("actualizar").value);
+                    i.id=newproduct
+                    i.name=newproduct
+                    i.category=newproduct
+                    i.price =newproduct
+                    i.quantityInStock=newproduct
+                    i.supplierId=newproduct
+                    cambio()
+                    ver()
+                })
+            }
+        }
+    })
+}
+
 
 // Ver y agregar menu suppliers
 document.getElementById("button8").addEventListener("click", ve)
@@ -70,7 +100,7 @@ fetch("info.json")
             }
             console.log(date[0]["suppliers"])
         }
-        //agregar
+        //Agregar suppliers
         document.getElementById("cu1").addEventListener("submit", function(event){
             event.preventDefault();
         
@@ -91,22 +121,47 @@ fetch("info.json")
             ve()  
         })
 })
-//Eliminar menu 
-//Ver menu order
-document.getElementById("button12").addEventListener("click", d)
-function d(){
-    fetch("info.json")
-    .then(res => res.json())
-    .then(data => {
-        for (const i of data[0]["orders"]){
-            document.getElementById("document").innerHTML +=`
-            <p>id: ${i.orderId}</p>
-            <p>name: ${i.productId}</p>
-             <p>category: ${i.quantity}</p>
-            <p>phone: ${i.price}</p>
-            <p>email: ${i.orderDate}</p>
-            <p>address: ${i.status}</p>
-        `
+
+
+//Ver y agregar menu order
+document.getElementById("button9").addEventListener("click", o)
+fetch("info.json")
+.then(res => res.json())
+.then(data => {
+        function o(){
+            for (const i of data[0]["orders"]){
+                document.getElementById("document").innerHTML +=`
+                <p>orderid: ${i.orderId}</p>
+                <p>productid: ${i.productId}</p>
+                <p>quantity: ${i.quantity}</p>
+                <p>price: ${i.price}</p>
+                <p>orderdate: ${i.orderDate}</p>
+                <p>status: ${i.status}</p>
+            `
+            }
+            console.log(data[0]["orders"])
         }
-    })
-}
+        // Agregar order
+        document.getElementById("a1").addEventListener("submit", function(event){
+            event.preventDefault();
+        
+            let orderId=parseInt(document.getElementById("cuadro49").value);    
+            let productId=parseInt(document.getElementById("cuadro50").value);  
+            let quantity=parseInt(document.getElementById("cuadro51").value);  
+            let price=parseInt(document.getElementById("cuadro52").value);  
+            let orderDate=parseInt(document.getElementById("cuadro53").value);  
+            let status=document.getElementById("cuadro54").value;
+            data[0]["orders"].push({
+                "orderid":orderId,
+                "producid":productId,
+                "quantity":quantity,
+                "price":price,
+                "orderdate":orderDate,
+                "status":status
+            }) ;
+            console.log(data[0]["orders"])
+                                    
+            o()  
+        })
+        
+})
