@@ -1,8 +1,8 @@
 // Ver menu products y agregar products
-document.getElementById("button4").addEventListener("click", ver)
 fetch("info.json")
 .then(res => res.json())
 .then(data => {
+        document.getElementById("button4").addEventListener("click", ver)
         function ver(){
             for (const i of data[0]["products"]){
                 document.getElementById("documentos").innerHTML +=`
@@ -40,12 +40,25 @@ fetch("info.json")
         })
         
 })
+
+document.getElementById("button2").addEventListener("click",(e)=>{
+    e.preventDefault()
+    eliminar()
+})
+
 //Eliminar products
-function eliminar(id){
-    data[0].products=data[0].products.filter(Object=>Object.id!==id);
-    ver()
+function eliminar(){
+    fetch("info.json")
+    .then(res => res.json())
+    .then(data => {
+        const IdEliminar = parseInt(document.getElementById("cuadro7").value);
+        console.log(IdEliminar)
+        data[0].products=data[0].products.filter(Object=>Object.id!==IdEliminar);
+        console.log(data[0].products)
+        ver()
+    })
 }
-eliminar(3)
+
 
 //Actualizar menu products
 function cambio(){
@@ -122,6 +135,23 @@ fetch("info.json")
         })
 })
 
+document.getElementById("button6").addEventListener("click",(v)=>{
+    v.preventDefault()
+    elimina()
+})
+//Eliminar menu Supplier
+function elimina(){
+    fetch("info.json")
+    .then(res => res.json())
+    .then(data => {
+        const Ideliminar = parseInt(document.getElementById("cuadro31").value);
+        console.log(Ideliminar)
+        data[0].suppliers=data[0].suppliers.filter(Object=>Object.id!==Ideliminar);
+        console.log(data[0].suppliers)
+        ve()
+    })
+}
+
 
 //Ver y agregar menu order
 document.getElementById("button9").addEventListener("click", o)
@@ -165,3 +195,20 @@ fetch("info.json")
         })
         
 })
+
+document.getElementById("button10").addEventListener("click",(a)=>{
+    a.preventDefault()
+    elimi()
+})
+//Eliminar menu Orders
+function elimi(){
+    fetch("info.json")
+    .then(res => res.json())
+    .then(data => {
+        const Idelimina = parseInt(document.getElementById("cuadro31").value);
+        console.log(Idelimina)
+        data[0].orders=data[0].orders.filter(Object=>Object.id!==Idelimina);
+        console.log(data[0].orders)
+        o()
+    })
+}
