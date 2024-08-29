@@ -1,0 +1,32 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+}
+th{
+    background-color: #B28DFF;
+}
+#letra{
+    margin-top: 2vw;
+    color: #B28DFF;
+    margin-left: -10vw;
+}
+#contenido{
+    text-align: center;
+}
+#entrada{
+    text-align: center;
+    margin-left: -15vw;
+    background-color: #ACE7FF;
+}
+#entrada:focus{
+    border-color: #8750ff;
+    outline: none;
+}
+#presiona{
+    margin-top: 5vw;
+    margin-left: -8.5vw;
+}
