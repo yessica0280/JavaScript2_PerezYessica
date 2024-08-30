@@ -33,10 +33,17 @@ function datatable(data){
             celli.textContent=i;
             row.appendChild(celli);
             const cellValue=document.createElement("td");
-            cellValue.textContent=typeof data[i]==="object"?JSON.stringify(data[i]):data[i];
+            if (i === "image" && typeof data[i] ==="object" && data[i].url){
+                const img =document.createElement("img");
+                img.src = data[i].url;
+                cellValue.appendChild(img);
+            }else{
+                cellValue.textContent=typeof data[i]==='object'?JSON.stringify(data[i]): data[i];
+            }
             row.appendChild(cellValue);
             table.appendChild(row);
         }
+        
     }
     outputDiv.appendChild(table);
 }

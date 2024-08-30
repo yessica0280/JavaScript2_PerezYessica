@@ -12,7 +12,7 @@ th{
 #letra{
     margin-top: 2vw;
     color: #B28DFF;
-    margin-left: -10vw;
+    margin-left: -12vw;
 }
 #contenido{
     text-align: center;
@@ -21,6 +21,7 @@ th{
     text-align: center;
     margin-left: -15vw;
     background-color: #ACE7FF;
+    border-radius: 2vw;
 }
 #entrada:focus{
     border-color: #8750ff;
@@ -28,5 +29,5 @@ th{
 }
 #presiona{
     margin-top: 5vw;
-    margin-left: -8.5vw;
+    margin-left: -7vw;
 }
