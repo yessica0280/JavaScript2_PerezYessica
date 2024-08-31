@@ -43,95 +43,108 @@ document.getElementById('presiona').addEventListener('click', function(){
             <td scope="row">Hair gender: </td>
             <td colspan="2">${data.gender}</td>
             </tr>
+            <tr class="table-dark">
+                <td scope="row">Homeworld:</td>
+                    <td>
+                        <ul>
+                            <li id="homeworld" class="list-group-item">
+                                <table>
+                                    <tbody>
+                                        <table class="table table-light">
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </td>
+                </td>
+            </tr>
+            <tr class="table-dark">
+                <td scope="row">Films: </td>
+                    <td>
+                        <ul>
+                            <li id="fil" class="list-group-item">
+                                <table>
+                                    <tbody>
+                                        <table class="table table-light">
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </td>
+                </td>
+            </tr>
+            <tr class="table-dark">
+                <td scope="row">Species: </td>
+                    <td>
+                        <ul>
+                            <li id="specie" class="list-group-item">
+                                <table>
+                                    <tbody>
+                                        <table class="table table-light">
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </td>
+                </td>
+            </tr>
+            <tr class="table-dark">
+                <td scope="row">Vehicles: </td>
+                    <td>
+                            <ul>
+                            <li id="vehicles" class="list-group-item">
+                                <table>
+                                    <tbody>
+                                        <table class="table table-light">
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </td>
+                </td>
+            </tr>  
+            <tr class="table-dark">
+                <td scope="row">starship: </td>
+                    <td>
+                            <ul>
+                            <li id="starship" class="list-group-item">
+                                <table>
+                                    <tbody>
+                                        <table class="table table-light">
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </td>
+                </td>
+            </tr> 
         </tbody>
         </table>
         ` 
         fetch(data.homeworld)
         .then(res => res.json())
         .then(homeworld =>{
-            document.getElementById("resultado").innerHTML +=`
-                <table class="table">
+            document.getElementById("homeworld").innerHTML +=`
+            <table>
                 <tbody>
-                    <tr class="table-dark">
-                        <td scope="row">Homeworld: </td>
-                            <td>
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <table class="table table-light">
-                                            <tbody>
-                                                <tr><th>Name:</th><td> ${homeworld.name}</td></tr>
-                                                    <tr><th>Rotation period:</th><td> ${homeworld["rotation_period"]}</td></tr>
-                                                    <tr><th>Orbital period:</th><td> ${homeworld["orbital_period"]}</td></tr>
-                                                    <tr><th>Dilameter:</th><td> ${homeworld.diameter}</td></tr>
-                                                    <tr><th>Climate:</th><td> ${homeworld.climate}</td></tr>
-                                                    <tr><th>Gravity:</th><td> ${homeworld.gravity}</td></tr>
-                                                    <tr><th>Terrain:</th><td> ${homeworld.terrain}</td></tr>
-                                                    <tr><th>Surface water:</th><td> ${homeworld["surface_water"]}</td></tr>
-                                                    <tr><th>Population:</th><td> ${homeworld.population}</td></tr>
-                                                    <tr><th>Residents:</th><td> ${homeworld.residents.map(i=>i).join("<br>")}</td></tr>
-                                                    <tr><th>Films:</th><td> ${homeworld.films.map(i=>i).join("<br>")}</td></tr>
-                                                    <tr><th>Created:</th><td> ${homeworld.created}</td></tr>
-                                                    <tr><th>Edited:</th><td> ${homeworld.edited}</td></tr>
-                                                    <tr><th>Url:</th><td> ${homeworld.url}</td></tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </td>
-                        </td>
-                    </tr>
-                    <tr class="table-dark">
-                        <td scope="row">Films: </td>
-                            <td>
-                                <ul>
-                                    <li id="fil" class="list-group-item">
-                                        <table>
-                                            <tbody>
-                                                <table class="table table-light">
-                                                </table>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </td>
-                        </td>
-                    </tr>
-                    <tr class="table-dark">
-                        <td scope="row">Species: </td>
-                            <td>
-                                <ul>
-                                    <li id="specie" class="list-group-item">
-                                        <table>
-                                            <tbody>
-                                                <table class="table table-light">
-
-                                                </table>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </td>
-                        </td>
-                    </tr>
-                    <tr class="table-dark">
-                        <td scope="row>"Vehicles: </td>
-                            <td>
-                                 <ul>
-                                    <li id="vehicles" class="list-group-item">
-                                        <table>
-                                            <tbody>
-                                               <table class="table table-light">
-
-                                               </table>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </td>
-                        </td>
-                    </tr>                    
+                    <table class="table table-light">
+                        <tr><th>Name:</th><td> ${homeworld.name}</td></tr>
+                        <tr><th>Rotation period:</th><td> ${homeworld["rotation_period"]}</td></tr>
+                        <tr><th>Orbital period:</th><td> ${homeworld["orbital_period"]}</td></tr>
+                        <tr><th>Dilameter:</th><td> ${homeworld.diameter}</td></tr>
+                        <tr><th>Climate:</th><td> ${homeworld.climate}</td></tr>
+                        <tr><th>Gravity:</th><td> ${homeworld.gravity}</td></tr>
+                        <tr><th>Terrain:</th><td> ${homeworld.terrain}</td></tr>
+                        <tr><th>Surface water:</th><td> ${homeworld["surface_water"]}</td></tr>
+                        <tr><th>Population:</th><td> ${homeworld.population}</td></tr>
+                        <tr><th>Residents:</th><td> ${homeworld.residents.map(i=>i).join("<br>")}</td></tr>
+                        <tr><th>Films:</th><td> ${homeworld.films.map(i=>i).join("<br>")}</td></tr>
+                        <tr><th>Created:</th><td> ${homeworld.created}</td></tr>
+                        <tr><th>Edited:</th><td> ${homeworld.edited}</td></tr>
+                        <tr><th>Url:</th><td> ${homeworld.url}</td></tr>
+                    </table>
                 </tbody>
-            </table>
+            </table>                  
             `
         })
         for (const i of data.films){
@@ -139,7 +152,7 @@ document.getElementById('presiona').addEventListener('click', function(){
             .then(res => res.json())
             .then(films => {
                 document.getElementById("fil").innerHTML +=`
-                    <table>
+                <table>
                     <tbody>
                         <table class="table table-light">
                             <tr><th>Name:</th><td> ${films.title}</td></tr>
@@ -182,7 +195,7 @@ document.getElementById('presiona').addEventListener('click', function(){
                             <tr><th>Language:</th><td> ${species.language}</td></tr>
                             <tr><th>People:</th><td> ${species.people.map(i=>i).join("<br>")}</td></tr>
                             <tr><th>Films:</th><td> ${species.films.map(i=>i).join("<br>")}</td></tr>
-                            <tr><th>Created:</th><td> ${species.creates}</td></tr>
+                            <tr><th>Created:</th><td> ${species.created}</td></tr>
                             <tr><th>Edited:</th><td> ${species.edited}</td></tr>
                             <tr><th>Url:</th><td> ${species.url}</td></tr>
                         </table>
@@ -191,36 +204,65 @@ document.getElementById('presiona').addEventListener('click', function(){
                 `
             })
         }
-        for ( const i of data.vehicles){
+        for (const i of data.vehicles) {
             fetch(i)
-            .then(re => re.json())
+            .then(res => res.json())
             .then(vehicles => {
-                document.getElementById("vehicles").innerHTML+=`
+                document.getElementById("vehicles").innerHTML += `
                 <table>
                     <tbody>
                         <table class="table table-light">
                             <tr><th>Name:</th><td> ${vehicles.name}</td></tr>
                             <tr><th>Model:</th><td> ${vehicles.model}</td></tr>
                             <tr><th>Manufacturer:</th><td> ${vehicles.manufacturer}</td></tr>
-                            <tr><th>Cost in credits:</th><td> ${vehicles.cost_in_credits}</td></tr>
+                            <tr><th>Cost in Credits:</th><td> ${vehicles.cost_in_credits}</td></tr>
                             <tr><th>Length:</th><td> ${vehicles.length}</td></tr>
-                            <tr><th>Max atmosphering spedd:</th><td> ${vehicles.max_atmosphering_speed}</td></tr>
+                            <tr><th>Max atmosphering speed:</th><td> ${vehicles.max_atmosphering_speed}</td></tr>
                             <tr><th>Crew:</th><td> ${vehicles.crew}</td></tr>
                             <tr><th>Passengers:</th><td> ${vehicles.passengers}</td></tr>
                             <tr><th>Cargo capacity:</th><td> ${vehicles.cargo_capacity}</td></tr>
                             <tr><th>Consumables:</th><td> ${vehicles.consumables}</td></tr>
-                            <tr><th>Vhicles class:</th><td> ${vehicles.vehicles_class}</td></tr>
-                            <tr><th>Pilots:</th><td> ${vehicles.pilots.map(i=>i).join("<br>")}</td></tr>
-                            <tr><th>Films:</th><td> ${vehicles.films.map(i=>i).join("<br>")}</td></tr>
-                            <tr><th>Created:</th><td> ${vehicles.creates}</td></tr>
+                            <tr><th>Vehicle class:</th><td> ${vehicles.vehicle_class}</td></tr>
+                            <tr><th>Pilots:</th><td> ${vehicles.pilots}</td></tr>
+                            <tr><th>Films:</th><td> ${vehicles.films}</td></tr>
+                            <tr><th>Created:</th><td> ${vehicles.created}</td></tr>
                             <tr><th>Edited:</th><td> ${vehicles.edited}</td></tr>
                             <tr><th>Url:</th><td> ${vehicles.url}</td></tr>
+
                         </table>
                     </tbody>
-                </table>
-                `
+                </table> `
             })
-        } 
+        }
+        for (const i of data.starships) {
+            fetch(i)
+            .then(res => res.json())
+            .then(starships => {
+                document.getElementById("starship").innerHTML += `
+                <table>
+                    <tbody>
+                        <table class="table table-light">
+                            <tr><th>Name:</th><td> ${starships.name}</td></tr>
+                            <tr><th>Model:</th><td> ${starships.model}</td></tr>
+                            <tr><th>Manufacturer:</th><td> ${starships.manufacturer}</td></tr>
+                            <tr><th>Cost in Credits:</th><td> ${starships.cost_in_credits}</td></tr>
+                            <tr><th>Length:</th><td> ${starships.length}</td></tr>
+                            <tr><th>Max atmosphering speed:</th><td> ${starships.max_atmosphering_speed}</td></tr>
+                            <tr><th>Crew:</th><td> ${starships.crew}</td></tr>
+                            <tr><th>Passengers:</th><td> ${starships.passengers}</td></tr>
+                            <tr><th>Cargo capacity:</th><td> ${starships.cargo_capacity}</td></tr>
+                            <tr><th>Consumables:</th><td> ${starships.consumables}</td></tr>
+                            <tr><th>Vehicle class:</th><td> ${starships.vehicle_class}</td></tr>
+                            <tr><th>Pilots:</th><td> ${starships.pilots}</td></tr>
+                            <tr><th>Films:</th><td> ${starships.films}</td></tr>
+                            <tr><th>Created:</th><td> ${starships.created}</td></tr>
+                            <tr><th>Edited:</th><td> ${starships.edited}</td></tr>
+                            <tr><th>Url:</th><td> ${starships.url}</td></tr>
+                        </table>
+                    </tbody>
+                </table> `
+            })
+        }
     })
     .catch(error =>{
         console.error('Hubo un error', error);
