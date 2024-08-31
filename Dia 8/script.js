@@ -118,6 +118,18 @@ document.getElementById('presiona').addEventListener('click', function(){
                     </td>
                 </td>
             </tr> 
+            <tr class="table-dark">
+                <td scope="row">Created: </td>
+                <td>${data.created}</td>
+            </tr>
+            <tr class="table-dark">
+                <td scope="row">Edited: </td>
+                <td>${data.edited}</td>
+            </tr>
+            <tr class="table-dark">
+                <td scope="row">url: </td>
+                <td>${data.url}</td>
+            </tr>
         </tbody>
         </table>
         ` 
@@ -268,3 +280,4 @@ document.getElementById('presiona').addEventListener('click', function(){
         console.error('Hubo un error', error);
     })
 });
+//Desarrollado por Yessica Andrea Perez Machuca Grupo:T2.
