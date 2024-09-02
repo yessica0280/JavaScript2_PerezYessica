@@ -9,12 +9,13 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-left: 9em;
 }
 #letra{
     height: 3em;
-    width: 23em;
-    box-shadow: 5px 5px 10px rgb(145, 144, 144);
-    margin-left: -29em;
+    width: 19em;
+    box-shadow: -5px 5px 10px rgb(145, 144, 144);
+    margin-left: -27em;
     margin-top: 18em;
     border-radius: 0.5em;
     position: relative;
@@ -23,4 +24,54 @@
     position: relative;
     margin-left: -11em;
     margin-top: -6em;
+    width: 5em;
+    height: 5em;
+}
+#prev{
+    margin-left: -19em;
+    margin-top: 34em;
+    width: 10em;
+    height: 4em;
+    background-color: rgb(60, 59, 59);
+    color: white;
+    box-shadow: -5px 5px 10px rgb(0, 0, 0);
+    transition: all 0.2s ease;
+}
+#prev:active {
+    box-shadow: -2px 2px 5px black; 
+    transform: translateY(2px); 
+}
+#next{
+    margin-top: 34em;
+    width: 10em;
+    height: 4em;
+    background-color: rgb(60, 59, 59);
+    color: white;
+    box-shadow:  -5px 5px 10px rgb(0, 0, 0);
+    margin-left: 1em;
+    transition: all 0.2s ease;
+}
+#next:active {
+    box-shadow: -2px 2px 5px black; 
+    transform: translateY(2px); 
+}
+#resultado1{
+    position: relative;
+    left: -5em;
+    top: 3em;
+    font-size: 1.7em;
+    width: 9em;
+    height: 4em;
+    font-family: 'Oxanium', cursive;
+    color: rgb(136, 131, 131);
+}
+#resultado2{
+    position: relative;
+    left: -12em;
+    top: 3em;
+    font-size: 1.7em;
+    width: 9em;
+    height: 4em;
+    font-family: 'Oxanium', cursive;
+    color: black;
 }
