@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+    }
+#contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#letra{
+    height: 3em;
+    width: 23em;
+    box-shadow: 5px 5px 10px rgb(145, 144, 144);
+    margin-left: -29em;
+    margin-top: 18em;
+    border-radius: 0.5em;
+    position: relative;
+}
+#resultado{
+    position: relative;
+    margin-left: -11em;
+    margin-top: -6em;
+}

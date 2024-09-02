@@ -46,11 +46,11 @@ document.getElementById('presiona').addEventListener('click', function(){
             <tr class="table-dark">
                 <td scope="row">Homeworld:</td>
                     <td>
-                        <ul>
+                        <ul class="list-group">
                             <li id="homeworld" class="list-group-item">
                                 <table>
                                     <tbody>
-                                        <table class="table table-light">
+                                        <table class="table table-light" >
                                     </tbody>
                                 </table>
                             </li>
@@ -61,7 +61,7 @@ document.getElementById('presiona').addEventListener('click', function(){
             <tr class="table-dark">
                 <td scope="row">Films: </td>
                     <td>
-                        <ul>
+                        <ul class="list-group">
                             <li id="fil" class="list-group-item">
                                 <table>
                                     <tbody>
@@ -76,7 +76,7 @@ document.getElementById('presiona').addEventListener('click', function(){
             <tr class="table-dark">
                 <td scope="row">Species: </td>
                     <td>
-                        <ul>
+                        <ul class="list-group">
                             <li id="specie" class="list-group-item">
                                 <table>
                                     <tbody>
@@ -91,7 +91,7 @@ document.getElementById('presiona').addEventListener('click', function(){
             <tr class="table-dark">
                 <td scope="row">Vehicles: </td>
                     <td>
-                            <ul>
+                            <ul class="list-group">
                             <li id="vehicles" class="list-group-item">
                                 <table>
                                     <tbody>
@@ -106,7 +106,7 @@ document.getElementById('presiona').addEventListener('click', function(){
             <tr class="table-dark">
                 <td scope="row">starship: </td>
                     <td>
-                            <ul>
+                            <ul class="list-group">
                             <li id="starship" class="list-group-item">
                                 <table>
                                     <tbody>
