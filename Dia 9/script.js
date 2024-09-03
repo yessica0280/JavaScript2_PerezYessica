@@ -17,7 +17,8 @@ function poke(leer){
         let id=data.id
         document.getElementById("resultado").innerHTML=""
         document.getElementById("resultado").innerHTML+=`
-            <img src="${pasos}">
+            <img src="${pasos}" style="width: 6vw; height: 6vw;">
+            <audio autoplay src="${data.cries.latest}"></audio>
         `
         document.getElementById("resultado1").innerHTML=""
         document.getElementById("resultado1").innerHTML+=`

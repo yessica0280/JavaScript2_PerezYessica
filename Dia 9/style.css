@@ -22,10 +22,8 @@
 }
 #resultado{
     position: relative;
-    margin-left: -11em;
-    margin-top: -6em;
-    width: 5em;
-    height: 5em;
+    left: -11em;
+    top: -5em;
 }
 #prev{
     margin-left: -19em;
@@ -57,7 +55,7 @@
 }
 #resultado1{
     position: relative;
-    left: -5em;
+    left: -12em;
     top: 3em;
     font-size: 1.7em;
     width: 9em;
@@ -67,7 +65,7 @@
 }
 #resultado2{
     position: relative;
-    left: -12em;
+    left: -19em;
     top: 3em;
     font-size: 1.7em;
     width: 9em;
