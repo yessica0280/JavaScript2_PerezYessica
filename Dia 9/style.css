@@ -9,14 +9,14 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-left: 9em;
+    margin-left: 19em;
 }
 #letra{
     height: 3em;
     width: 19em;
     box-shadow: -5px 5px 10px rgb(145, 144, 144);
     margin-left: -27em;
-    margin-top: 18em;
+    margin-top: 20em;
     border-radius: 0.5em;
     position: relative;
 }
