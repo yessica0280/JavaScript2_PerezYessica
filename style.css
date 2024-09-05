@@ -1,0 +1,35 @@
+body{
+    background-image: url("imagenes/fondo.avif");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+#pokemon1{
+    width: 10vw;
+    height: 20vw;
+    margin-top: 20vw;
+}
+#pokemon{
+    width: 22vw;
+    height: 22vw;
+    margin-left: 6vw;
+    margin-top: 2vw;
+    border-radius: 50%;
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+}
+.pokemon:hover{
+    width: 50vw;
+}
+#star{
+    width: 22vw;
+    height: 22vw;
+    margin-left: 6vw;
+    margin-top: 2vw;
+    box-shadow: -3px 4px 0 #9eeb60, -5px 7px 0 #8bfa0d;
+    border-radius: 100%;
+}
+#heroes{
+    width: 22vw;
+    height: 22vw;
+    margin-left: 6vw;
+    margin-top: 2vw;
+}
