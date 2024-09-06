@@ -3,33 +3,39 @@ body{
     background-repeat: no-repeat;
     background-size: 100vw;
 }
-#pokemon1{
-    width: 10vw;
-    height: 20vw;
-    margin-top: 20vw;
-}
 #pokemon{
-    width: 22vw;
-    height: 22vw;
+    width: 24vw;
+    height: 24vw;
     margin-left: 6vw;
-    margin-top: 2vw;
+    margin-top: 12vw;
     border-radius: 50%;
-    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+    box-shadow: 0 0 30px rgba(119, 240, 86, 0.8);
 }
-.pokemon:hover{
-    width: 50vw;
+#pokemon:hover{
+    width: 28vw;
+    height: 28vw;
 }
 #star{
-    width: 22vw;
-    height: 22vw;
+    width: 24vw;
+    height: 24vw;
     margin-left: 6vw;
-    margin-top: 2vw;
-    box-shadow: -3px 4px 0 #9eeb60, -5px 7px 0 #8bfa0d;
-    border-radius: 100%;
+    margin-top: 5vw;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(119, 240, 86, 0.8);
+}
+#star:hover{
+    width: 28vw;
+    height: 28vw;
 }
 #heroes{
-    width: 22vw;
-    height: 22vw;
+    width: 24vw;
+    height: 24vw;
     margin-left: 6vw;
-    margin-top: 2vw;
+    margin-top: 5vw;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(119, 240, 86, 0.8);
+}
+#heroes:hover{
+    width: 28vw;
+    height: 28vw;
 }
