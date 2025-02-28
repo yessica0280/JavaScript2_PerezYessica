@@ -16,7 +16,7 @@ En este repositorio podrás encontrar 10 archivos los cuales te voy a explicar m
 
 ## Herramienta Utilizada
 
-![image](https://github.com/user-attachments/assets/3544d03e-66dc-4b3b-b4da-c1bb40705f98)
+![image](https://github.com/user-attachments/assets/f17ff78a-a9ca-44c6-abea-c173f2e8105b)
 
 ## Módulo 1
 
